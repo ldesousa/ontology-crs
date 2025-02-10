@@ -14,11 +14,6 @@
     rdfs:subClassOf <geosrs:CoordinateSystem> ;
     skos:definition "A two-dimensional measurement system that locates features on a plane based on their distance from an origin (0,0) along two perpendicular axes."@en .
 
-<geosrs:1DCoordinateSystem> a owl:Class ;
-    rdfs:label "1D Coordinate System"@en ;
-    rdfs:subClassOf <geosrs:CoordinateSystem> ;
-    skos:definition "Non-repeating sequence of coordinate system axes that spans a given coordinate space in one dimension"@en .
-
 <geosrs:AffineCoordinateSystem> a owl:Class ;
     rdfs:label "Affine Coordinate System"@en ;
     rdfs:subClassOf <geosrs:CoordinateSystem> ;
@@ -38,6 +33,11 @@
     rdfs:label "Cylindrical Coordinate System"@en ;
     rdfs:subClassOf <geosrs:3DCoordinateSystem> ;
     skos:definition "Three-dimensional coordinate system in Euclidean space in which position is specified by two linear coordinates and one angular coordinate"@en .
+
+<geosrs:DateTimeTemporalCoordinateSystem> a owl:Class ;
+    rdfs:label "DateTime Temporal Coordinate System"@en ;
+    rdfs:subClassOf <geosrs:TemporalCoordinateSystem> ;
+    skos:definition "One-dimensional coordinate system used to record time in dateTime representation as defined in ISO 8601."@en .
 
 <geosrs:EclipticCoordinateSystem> a owl:Class ;
     rdfs:label "Ecliptic Coordinate System"@en ;
@@ -86,6 +86,28 @@
     rdfs:subClassOf <geosrs:CoordinateSystem> ;
     skos:definition "A plane coordinate system whose axes are not perpendicular."@en .
 
+<geosrs:SkewCoordinateSystem> a owl:Class ;
+    rdfs:label "Skew Coordinate System"@en ;
+    rdfs:subClassOf <geosrs:CurvilinearCoordinateSystem> ;
+    skos:definition "A skew coordinate system is a system of curvilinear coordinates in which each family of surfaces intersects the others at angles other than right angles."@en .
+
+<geosrs:SuperGalacticCS> a owl:Class ;
+    rdfs:label "Super Galactic Coordinate System"@en ;
+    rdfs:subClassOf <>,
+        <geosrs:3DCoordinateSystem>,
+        <geosrs:CelestialCoordinateSystem;> ;
+    skos:definition "A reference frame for the supercluster of galaxies that contains the Milky Way galaxy, referenced to a local relatively flat collection of galaxy clusters used to define the supergalactic plane."@en .
+
+<geosrs:TemporalCountCoordinateSystem> a owl:Class ;
+    rdfs:label "Temporal Count Coordinate System"@en ;
+    rdfs:subClassOf <geosrs:TemporalCoordinateSystem> ;
+    skos:definition "One-dimensional coordinate system used to record time as an integer count."@en .
+
+<geosrs:TemporalMeasureCoordinateSystem> a owl:Class ;
+    rdfs:label "Temporal Measure Coordinate System"@en ;
+    rdfs:subClassOf <geosrs:TemporalCoordinateSystem> ;
+    skos:definition "One-dimensional coordinate system used to record a time as a real number."@en .
+
 <geosrs:cylindricalCS> a owl:ObjectProperty ;
     rdfs:label "cylindrical cs"@en ;
     rdfs:domain <https://w3id.org/geosrs#CRS> ;
@@ -97,10 +119,10 @@
     vann:preferredNamespacePrefix "cs"^^xsd:string ;
     vann:preferredNamespaceUri "http://www.opengis.net/ont/srs/cs/"^^xsd:anyURI .
 
-<geosrs:CurvilinearCoordinateSystem> a owl:Class ;
-    rdfs:label "Curvilinear Coordinate System"@en ;
+<geosrs:1DCoordinateSystem> a owl:Class ;
+    rdfs:label "1D Coordinate System"@en ;
     rdfs:subClassOf <geosrs:CoordinateSystem> ;
-    skos:definition "A coordinate system for the Euclidean space in which the coordinate lines may be curved"@en .
+    skos:definition "Non-repeating sequence of coordinate system axes that spans a given coordinate space in one dimension"@en .
 
 <geosrs:GeodeticCoordinateSystem> a owl:Class ;
     rdfs:label "Geodetic Coordinate System"@en ;
@@ -117,10 +139,20 @@
     rdfs:subClassOf <geosrs:CurvilinearCoordinateSystem> ;
     skos:definition "A orthogonal coordinate system is a system of curvilinear coordinates in which each family of surfaces intersects the others at right angles."@en .
 
+<geosrs:CurvilinearCoordinateSystem> a owl:Class ;
+    rdfs:label "Curvilinear Coordinate System"@en ;
+    rdfs:subClassOf <geosrs:CoordinateSystem> ;
+    skos:definition "A coordinate system for the Euclidean space in which the coordinate lines may be curved"@en .
+
 <geosrs:3DCoordinateSystem> a owl:Class ;
     rdfs:label "3D Coordinate System"@en ;
     rdfs:subClassOf <geosrs:CoordinateSystem> ;
     skos:definition "Non-repeating sequence of coordinate system axes that spans a given coordinate space in three dimensions"@en .
+
+<geosrs:TemporalCoordinateSystem> a owl:Class ;
+    rdfs:label "Temporal Coordinate System"@en ;
+    rdfs:subClassOf <geosrs:1DCoordinateSystem> ;
+    skos:definition "One-dimensionalcoordinate system where the axis is time."@en .
 
 <geosrs:CelestialCoordinateSystem> a owl:Class ;
     rdfs:label "Celestial Coordinate System"@en ;

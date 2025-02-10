@@ -249,6 +249,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
       <li><a href="geosrs:ConicalCoordinateSystem">geosrs:ConicalCoordinateSystem</a></li>
       <li><a href="geosrs:CurvilinearCoordinateSystem">geosrs:CurvilinearCoordinateSystem</a></li>
       <li><a href="geosrs:CylindricalCoordinateSystem">geosrs:CylindricalCoordinateSystem</a></li>
+      <li><a href="geosrs:DateTimeTemporalCoordinateSystem">geosrs:DateTimeTemporalCoordinateSystem</a></li>
       <li><a href="geosrs:EclipticCoordinateSystem">geosrs:EclipticCoordinateSystem</a></li>
       <li><a href="geosrs:EngineeringCoordinateSystem">geosrs:EngineeringCoordinateSystem</a></li>
       <li><a href="geosrs:EquatorialCoordinateSystem">geosrs:EquatorialCoordinateSystem</a></li>
@@ -261,6 +262,11 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
       <li><a href="geosrs:LocalCoordinateSystem">geosrs:LocalCoordinateSystem</a></li>
       <li><a href="geosrs:ObliqueCoordinateSystem">geosrs:ObliqueCoordinateSystem</a></li>
       <li><a href="geosrs:OrthogonalCoordinateSystem">geosrs:OrthogonalCoordinateSystem</a></li>
+      <li><a href="geosrs:SkewCoordinateSystem">geosrs:SkewCoordinateSystem</a></li>
+      <li><a href="geosrs:SuperGalacticCS">geosrs:SuperGalacticCS</a></li>
+      <li><a href="geosrs:TemporalCoordinateSystem">geosrs:TemporalCoordinateSystem</a></li>
+      <li><a href="geosrs:TemporalCountCoordinateSystem">geosrs:TemporalCountCoordinateSystem</a></li>
+      <li><a href="geosrs:TemporalMeasureCoordinateSystem">geosrs:TemporalMeasureCoordinateSystem</a></li>
     </ul>
     <div class="entity class" id="PerifocalCoordinateSystem">
         <h3>
@@ -332,6 +338,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                     <a href="geosrs:CoordinateSystem">geosrs:CoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="geosrs:TemporalCoordinateSystem">geosrs:TemporalCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
         </table>
     </div>
     <div class="entity class" id="3DCoordinateSystem">
@@ -359,8 +371,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="geosrs:CylindricalCoordinateSystem">geosrs:CylindricalCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="geosrs:SuperGalacticCS">geosrs:SuperGalacticCS</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="geosrs:GalacticCoordinateSystem">geosrs:GalacticCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="geosrs:CylindricalCoordinateSystem">geosrs:CylindricalCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -438,10 +451,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="geosrs:HorizontalCoordinateSystem">geosrs:HorizontalCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="geosrs:EquatorialCoordinateSystem">geosrs:EquatorialCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="geosrs:EclipticCoordinateSystem">geosrs:EclipticCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="geosrs:EquatorialCoordinateSystem">geosrs:EquatorialCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="geocrs:PerifocalCoordinateSystem">geocrs:PerifocalCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="geosrs:HorizontalCoordinateSystem">geosrs:HorizontalCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -495,6 +508,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
+                    <a href="geosrs:SkewCoordinateSystem">geosrs:SkewCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="geosrs:OrthogonalCoordinateSystem">geosrs:OrthogonalCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
@@ -520,6 +534,30 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Super-classes</th>
                 <td>
                     <a href="geosrs:3DCoordinateSystem">geosrs:3DCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="DateTimeTemporalCoordinateSystem">
+        <h3>
+          DateTime Temporal Coordinate System<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#DateTimeTemporalCoordinateSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>geosrs:DateTimeTemporalCoordinateSystem</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>One-dimensional coordinate system used to record time in dateTime representation as defined in ISO 8601.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="geosrs:TemporalCoordinateSystem">geosrs:TemporalCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -615,8 +653,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="geosrs:3DCoordinateSystem">geosrs:3DCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="geosrs:CelestialCoordinateSystem;">geosrs:CelestialCoordinateSystem;</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="geosrs:3DCoordinateSystem">geosrs:3DCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -828,6 +866,136 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Sub-classes</th>
                 <td>
                     <a href="geosrs:ConicalCoordinateSystem">geosrs:ConicalCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="SkewCoordinateSystem">
+        <h3>
+          Skew Coordinate System<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#SkewCoordinateSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>geosrs:SkewCoordinateSystem</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A skew coordinate system is a system of curvilinear coordinates in which each family of surfaces intersects the others at angles other than right angles.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="geosrs:CurvilinearCoordinateSystem">geosrs:CurvilinearCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="SuperGalacticCoordinateSystem">
+        <h3>
+          Super Galactic Coordinate System<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#SuperGalacticCoordinateSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>geosrs:SuperGalacticCS</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A reference frame for the supercluster of galaxies that contains the Milky Way galaxy, referenced to a local relatively flat collection of galaxy clusters used to define the supergalactic plane.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="file:///home/runner/work/ontology-crs/ontology-crs/docs/cs.ttl">file:///home/runner/work/ontology-crs/ontology-crs/docs/cs.ttl</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="geosrs:CelestialCoordinateSystem;">geosrs:CelestialCoordinateSystem;</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="geosrs:3DCoordinateSystem">geosrs:3DCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="TemporalCoordinateSystem">
+        <h3>
+          Temporal Coordinate System<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#TemporalCoordinateSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>geosrs:TemporalCoordinateSystem</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>One-dimensionalcoordinate system where the axis is time.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="geosrs:1DCoordinateSystem">geosrs:1DCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="geosrs:TemporalMeasureCoordinateSystem">geosrs:TemporalMeasureCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="geosrs:DateTimeTemporalCoordinateSystem">geosrs:DateTimeTemporalCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="geosrs:TemporalCountCoordinateSystem">geosrs:TemporalCountCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="TemporalCountCoordinateSystem">
+        <h3>
+          Temporal Count Coordinate System<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#TemporalCountCoordinateSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>geosrs:TemporalCountCoordinateSystem</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>One-dimensional coordinate system used to record time as an integer count.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="geosrs:TemporalCoordinateSystem">geosrs:TemporalCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="TemporalMeasureCoordinateSystem">
+        <h3>
+          Temporal Measure Coordinate System<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#TemporalMeasureCoordinateSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>geosrs:TemporalMeasureCoordinateSystem</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>One-dimensional coordinate system used to record a time as a real number.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="geosrs:TemporalCoordinateSystem">geosrs:TemporalCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
