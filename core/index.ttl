@@ -43,7 +43,8 @@ geosrs:GeographicCRS a owl:Class ;
     rdfs:label "Geographic Coordinate Reference System"@en .
 
 geosrs:LinearCoordinateSystem a owl:Class ;
-    rdfs:label "Linear Coordinate System"@en .
+    rdfs:label "Linear Coordinate System"@en ;
+    skos:definition "One-dimensional coordinate system in which a linear feature forms the axis."@en .
 
 geosrs:OperationMethod a owl:Class ;
     rdfs:label "operation method"@en ;
@@ -58,13 +59,19 @@ geosrs:OperationParameterValue a owl:Class ;
     skos:definition "Value of a parameter used by a method to perform an operation on coordinates. See ISO 19111:2007:2007-07, table 55."@en .
 
 geosrs:OrdinalCoordinateSystem a owl:Class ;
-    rdfs:label "Ordinal Coordinate System"@en .
+    rdfs:label "Ordinal Coordinate System"@en ;
+    rdfs:subClassOf geosrs:CoordinateSystem ;
+    skos:definition "n-dimensional coordinate system in which every axis uses integers."@en .
 
 geosrs:ParametricCoordinateSystem a owl:Class ;
-    rdfs:label "Parametric Coordinate System"@en .
+    rdfs:label "Parametric Coordinate System"@en ;
+    rdfs:subClassOf geosrs:1DCoordinateSystem ;
+    skos:definition "One-dimensional coordinate system where the axis units are parameter values which are not inherently spatial."@en .
 
 geosrs:PolarCoordinateSystem a owl:Class ;
-    rdfs:label "Polar Coordinate System"@en .
+    rdfs:label "Polar Coordinate System"@en ;
+    rdfs:subClassOf <geocrs:PlanarCoordinateSystem> ;
+    skos:definition "Two-dimensional coordinate system in Euclidean space in which position is specified by one distance coordinate and one angular coordinate."@en .
 
 geosrs:PrimeMeridian a owl:Class ;
     rdfs:label "Prime meridian"@en ;

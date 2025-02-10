@@ -4,6 +4,16 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<geocrs:PerifocalCoordinateSystem> a owl:Class ;
+    rdfs:label "Perifocal Coordinate System"@en ;
+    rdfs:subClassOf <geosrs:CelestialCoordinateSystem> ;
+    skos:definition "A frame of reference centered at the focus of the orbit, i.e. the celestial body about which the orbit is centered. "@en .
+
+<geocrs:PlanarCoordinateSystem> a owl:Class ;
+    rdfs:label "Planar Coordinate System"@en ;
+    rdfs:subClassOf <geosrs:CoordinateSystem> ;
+    skos:definition "A two-dimensional measurement system that locates features on a plane based on their distance from an origin (0,0) along two perpendicular axes."@en .
+
 <geosrs:1DCoordinateSystem> a owl:Class ;
     rdfs:label "1D Coordinate System"@en ;
     rdfs:subClassOf <geosrs:CoordinateSystem> ;
@@ -66,9 +76,25 @@
     rdfs:subClassOf <geosrs:CelestialCoordinateSystem> ;
     skos:definition "A horizontal coordinate system is a celestial coordinate system that uses the observer's local horizon as the fundamental plane."@en .
 
+<geosrs:LocalCoordinateSystem> a owl:Class ;
+    rdfs:label "Local Coordinate System"@en ;
+    rdfs:subClassOf <geosrs:CoordinateSystem> ;
+    skos:definition "Coordinate system with a point of local reference."@en .
+
+<geosrs:ObliqueCoordinateSystem> a owl:Class ;
+    rdfs:label "Oblique Coordinate System"@en ;
+    rdfs:subClassOf <geosrs:CoordinateSystem> ;
+    skos:definition "A plane coordinate system whose axes are not perpendicular."@en .
+
+<geosrs:cylindricalCS> a owl:ObjectProperty ;
+    rdfs:label "cylindrical cs"@en ;
+    rdfs:domain <https://w3id.org/geosrs#CRS> ;
+    rdfs:range <https://w3id.org/geosrs#CS> ;
+    skos:definition "Links a coordinate reference system to a cylindrical coordinate system"@en .
+
 <https://w3id.org/geosrs/cs> a owl:Ontology ;
-    rdfs:label "SRS Ontology: Geocs"@en ;
-    vann:preferredNamespacePrefix "geocs"^^xsd:string ;
+    rdfs:label "SRS Ontology: Cs"@en ;
+    vann:preferredNamespacePrefix "cs"^^xsd:string ;
     vann:preferredNamespaceUri "http://www.opengis.net/ont/srs/cs/"^^xsd:anyURI .
 
 <geosrs:CurvilinearCoordinateSystem> a owl:Class ;
@@ -89,7 +115,7 @@
 <geosrs:OrthogonalCoordinateSystem> a owl:Class ;
     rdfs:label "Orthogonal Coordinate System"@en ;
     rdfs:subClassOf <geosrs:CurvilinearCoordinateSystem> ;
-    skos:definition "A orthogonal coordinate system is a system of curvilinear coordinates in which each family of surfaces intersects the others at right angles"@en .
+    skos:definition "A orthogonal coordinate system is a system of curvilinear coordinates in which each family of surfaces intersects the others at right angles."@en .
 
 <geosrs:3DCoordinateSystem> a owl:Class ;
     rdfs:label "3D Coordinate System"@en ;

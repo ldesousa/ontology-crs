@@ -294,10 +294,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#coordinatesystem">coordinate system</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#sourceCRS">source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#baseCRS">base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#coordinatesystem">coordinate system</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#datum">datum</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
@@ -367,6 +367,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Description</th>
                 <td>
                     <p>Set of axes that spans a given coordinate space and of mathematical rules for specifying how coordinates are to be assigned to points. Cf. ISO 19111:2007:2007-07, part 9.2, table 17 and annex B.2.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#OrdinalCoordinateSystem">Ordinal Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -562,6 +568,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>URI</th>
                 <td><code>https://w3id.org/geosrs#LinearCoordinateSystem</code></td>
             </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>One-dimensional coordinate system in which a linear feature forms the axis.</p>
+                </td>
+            </tr>
         </table>
     </div>
     <div class="entity class" id="operationmethod">
@@ -628,6 +640,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>URI</th>
                 <td><code>https://w3id.org/geosrs#OrdinalCoordinateSystem</code></td>
             </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>n-dimensional coordinate system in which every axis uses integers.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#CoordinateSystem">Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
         </table>
     </div>
     <div class="entity class" id="ParametricCoordinateSystem">
@@ -640,6 +664,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>URI</th>
                 <td><code>https://w3id.org/geosrs#ParametricCoordinateSystem</code></td>
             </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>One-dimensional coordinate system where the axis units are parameter values which are not inherently spatial.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="https://w3id.org/geosrs#1DCoordinateSystem">geosrs:1DCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
         </table>
     </div>
     <div class="entity class" id="PolarCoordinateSystem">
@@ -651,6 +687,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>URI</th>
                 <td><code>https://w3id.org/geosrs#PolarCoordinateSystem</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Two-dimensional coordinate system in Euclidean space in which position is specified by one distance coordinate and one angular coordinate.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="geocrs:PlanarCoordinateSystem">geocrs:PlanarCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
             </tr>
         </table>
     </div>
