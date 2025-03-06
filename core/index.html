@@ -240,7 +240,6 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
   <section id="classes">
     <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
-      <li><a href="#AreaofUse">Area of Use</a></li>
       <li><a href="#CoordinateReferenceSystem">Coordinate Reference System</a></li>
       <li><a href="#CartesianCoordinateSystem">Cartesian Coordinate System</a></li>
       <li><a href="#Conversion">Conversion</a></li>
@@ -263,6 +262,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
       <li><a href="#PolarCoordinateSystem">Polar Coordinate System</a></li>
       <li><a href="#Primemeridian">Prime meridian</a></li>
       <li><a href="#ProjectedCoordinateReferenceSystem">Projected Coordinate Reference System</a></li>
+      <li><a href="#ReferenceSystem">Reference System</a></li>
       <li><a href="#SingleCoordinateReferenceSystem">Single Coordinate Reference System</a></li>
       <li><a href="#singleoperation">single operation</a></li>
       <li><a href="#SpatialReferenceSystem">Spatial Reference System</a></li>
@@ -271,24 +271,6 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
       <li><a href="#VerticalCoordinateSystem">Vertical Coordinate System</a></li>
       <li><a href="#VerticalDatum">Vertical Datum</a></li>
     </ul>
-    <div class="entity class" id="AreaofUse">
-        <h3>
-          Area of Use<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#AreaofUse" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/AreaOfUse</code></td>
-            </tr>
-            <tr>
-                <th>In range of</th>
-                <td>
-                    <a href="#domainofvalidity">domain of validity</a><sup class="sup-op" title="object property">op</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
     <div class="entity class" id="CoordinateReferenceSystem">
         <h3>
           Coordinate Reference System<sup title="class" class="sup-c">c</sup>
@@ -312,22 +294,32 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 </td>
             </tr>
             <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#SingleCoordinateReferenceSystem">Single Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#EngineeringCoordinateReferenceSystem">Engineering Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#GeographicCoordinateReferenceSystem">Geographic Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ProjectedCoordinateReferenceSystem">Projected Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#GeodeticCoordinateReferenceSystem">Geodetic Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#datum">datum</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#sourceCRS">source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#coordinatesystem">coordinate system</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#baseCRS">base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#domainofvalidity">domain of validity</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#datum">datum</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#sourceCRS">source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#baseCRS">base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#baseCRS">base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#sourceCRS">source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -573,6 +565,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>URI</th>
                 <td><code>https://w3id.org/geosrs/EngineeringCRS</code></td>
             </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A contextually local coordinate reference system which can be divided into two broad categories: - earth-fixed systems applied to engineering activities on or near the surface of the earth; - CRSs on moving platforms such as road vehicles, vessels, aircraft or spacecraft.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
         </table>
     </div>
     <div class="entity class" id="GeodeticCoordinateReferenceSystem">
@@ -588,7 +592,13 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Description</th>
                 <td>
-                    <p>Coordinate reference system associated with a geodetic datum. Cf. ISO 19111:2007:2007-07, part 8.2.2.a, table 10 and annex B.1.2.1.a.</p>
+                    <p>Coordinate Reference System associated with a geodetic datum. Cf. ISO 19111:2007:2007-07, part 8.2.2.a, table 10 and annex B.1.2.1.a.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -620,6 +630,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>URI</th>
                 <td><code>https://w3id.org/geosrs/GeographicCRS</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Coordinate Reference System that has a geodetic reference frame and an ellipsoidal coordinate system</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
             </tr>
         </table>
     </div>
@@ -804,7 +826,37 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Description</th>
                 <td>
-                    <p>Coordinate reference system derived from a two-dimensional geodetic coordinate reference system by applying a map projection. Cf. ISO 19111:2007:2007-07, part 8.2.3.b, table 11 and annex B.1.2.3.</p>
+                    <p>Coordinate Reference System derived from a two-dimensional geodetic coordinate reference system by applying a map projection. Cf. ISO 19111:2007:2007-07, part 8.2.3.b, table 11 and annex B.1.2.3.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="ReferenceSystem">
+        <h3>
+          Reference System<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ReferenceSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/ReferenceSystem</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>An abstract coordinate system, whose origin, orientation and scale are specified in physical space. It is based on a set of reference points, defined as geometric points whose position is identified physically and mathematically.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#SpatialReferenceSystem">Spatial Reference System</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -823,6 +875,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Description</th>
                 <td>
                     <p>Coordinate reference system consisting of one coordinate system and one datum. Cf. ISO 19111:2007:2007-07, table 5.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -870,13 +928,13 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Description</th>
                 <td>
-                    <p>A reference system allowing the description of a position.</p>
+                    <p>A spatial reference system (SRS) is a system for establishing spatial position. A spatial reference system can use geographic identifiers (place names, for example), coordinates (in which case it is a coordinate reference system), or identifiers with structured geometry (in which case it is a discrete global grid system).</p>
                 </td>
             </tr>
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/geosrs/srs/ReferenceSystem">https://w3id.org/geosrs/srs/ReferenceSystem</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ReferenceSystem">Reference System</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -1136,7 +1194,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="https://w3id.org/geosrs/AreaOfUse">geosrs:AreaOfUse</a><sup class="sup-c" title="class">c</sup>
+                    <a href="https://w3id.org/geosrs/srs/AreaOfUse">https://w3id.org/geosrs/srs/AreaOfUse</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
