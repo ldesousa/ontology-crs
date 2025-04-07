@@ -11,14 +11,14 @@
     skos:scopeNote "Engineering survey, topographic mapping." ;
     geosrs:Conversion [ rdfs:label "UTM zone 32N" ;
             geosrs:method [ rdfs:label "Transverse Mercator" ] ;
-            geosrs:operationParameter [ rdfs:label "False easting" ;
+            geosrs:operationParameter [ rdfs:label "Latitude of natural origin" ;
+                    om:hasUnit om:degree ;
+                    rdf:value 0 ],
+                [ rdfs:label "False easting" ;
                     om:hasUnit om:metre ;
                     rdf:value 500000 ],
                 [ rdfs:label "False northing" ;
                     om:hasUnit om:metre ;
-                    rdf:value 0 ],
-                [ rdfs:label "Latitude of natural origin" ;
-                    om:hasUnit om:degree ;
                     rdf:value 0 ],
                 [ rdfs:label "Scale factor at natural origin" ;
                     om:hasUnit om:unity ;
