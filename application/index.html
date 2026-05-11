@@ -231,7 +231,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
 <section id="overview">
     <h2>Overview</h2>
     <div class="figure">
-        <div style="width:500px; height:50px; background-color: lightgrey; border:solid 2px grey; padding:10px;margin-bottom:5px; text-align:center;">Pictures say 1,000 words</div>
+        <div style="background-color: lightgrey; border:solid 2px grey; padding:10px;margin-bottom:5px; text-align:center;"><img src="../images/application.png"/></div>
         <div class="caption"><strong>Figure 1:</strong> Ontology overview</div>
     </div>
 </section>
@@ -239,8 +239,17 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
     <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
       <li><a href="#CadastreMap">Cadastre Map</a></li>
+      <li><a href="#coastalhydrography">coastal hydrography</a></li>
+      <li><a href="#drilling">drilling</a></li>
+      <li><a href="#engineeringsurvey">engineering survey</a></li>
+      <li><a href="#hydrography">hydrography</a></li>
       <li><a href="#NauticalChart">Nautical Chart</a></li>
+      <li><a href="#offshoreengineering">offshore engineering</a></li>
+      <li><a href="#oilandgasexploration">oil and gas exploration</a></li>
       <li><a href="#SRSApplication">SRS Application</a></li>
+      <li><a href="#satellitenavigation">satellite navigation</a></li>
+      <li><a href="#satellitesurvey">satellite survey</a></li>
+      <li><a href="#SpatialReferencing">Spatial Referencing</a></li>
       <li><a href="#ThematicMap">Thematic Map</a></li>
       <li><a href="#TopographicMap">Topographic Map</a></li>
       <li><a href="#WeatherMap">Weather Map</a></li>
@@ -253,7 +262,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>https://w3id.org/geosrs/application/CadastreMap</code></td>
+                <td><code>https://w3id.org/geosrs/application/CadastreMap</code></td></tr><tr><th>Example</th><td><a target="_blank" href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//datum/Amersfoort">[Link]</a></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -265,6 +274,108 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Super-classes</th>
                 <td>
                     <a href="#SRSApplication">SRS Application</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="coastalhydrography">
+        <h3>
+          coastal hydrography<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#coastalhydrography" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/application/CoastalHydrography</code></td></tr><tr><th>Example</th><td><a target="_blank" href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//datum/Camacupa_1948">[Link]</a></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Hydrographic surveying &amp; monitoring focused on nearshore waters, where navigation safety and coastal change are most critical.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#hydrography">hydrography</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="drilling">
+        <h3>
+          drilling<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#drilling" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/application/Drilling</code></td></tr><tr><th>Example</th><td><a target="_blank" href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//datum/Mean_Sea_Level_Netherlands">[Link]</a></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Drilling is the process of creating holes in the ground (or other solid materials) using specialized tools, widely applied in energy, construction, mining, and manufacturing.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#SRSApplication">SRS Application</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="engineeringsurvey">
+        <h3>
+          engineering survey<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#engineeringsurvey" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/application/EngineeringSurvey</code></td></tr><tr><th>Example</th><td><a target="_blank" href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//datum/Geodetic_Datum_of_1965">[Link]</a></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>An engineering survey is the branch of surveying that provides the precise measurements and data needed to plan, build, and maintain engineering and infrastructure projects.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#SRSApplication">SRS Application</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="hydrography">
+        <h3>
+          hydrography<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#hydrography" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/application/Hydrography</code></td></tr><tr><th>Example</th><td><a target="_blank" href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//datum/Australian_Vertical_Working_Surface">[Link]</a></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Hydrography is the branch of applied sciences which deals with the measurement and description of the physical features of oceans, seas, coastal areas, lakes, and rivers, as well as the prediction of their change over time, for the primary purpose of safety of navigation and in support of all other marine activities, including economic development, security and defense, scientific research, and environmental protection.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#SRSApplication">SRS Application</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#coastalhydrography">coastal hydrography</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -283,6 +394,54 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Description</th>
                 <td>
                     <p>A graphic representation of a sea area and adjacent coastal regions.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#SRSApplication">SRS Application</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="offshoreengineering">
+        <h3>
+          offshore engineering<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#offshoreengineering" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/application/OffshoreEngineering</code></td></tr><tr><th>Example</th><td><a target="_blank" href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//datum/Mean_Sea_Level_Netherlands">[Link]</a></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Offshore engineering (also called ocean engineering or marine engineering in some contexts) is the branch of engineering concerned with the design, construction, installation, and maintenance of structures and systems in the ocean environment, such as oil and gas platforms, subsea pipelines, and renewable energy facilities.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#SRSApplication">SRS Application</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="oilandgasexploration">
+        <h3>
+          oil and gas exploration<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#oilandgasexploration" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/application/OilAndGasExploration</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Oil and natural gas exploration is the search for underground or underwater reservoirs containing hydrocarbons, using geological and geophysical methods, followed by drilling to confirm and produce them.</p>
                 </td>
             </tr>
             <tr>
@@ -312,11 +471,91 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#WeatherMap">Weather Map</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#NauticalChart">Nautical Chart</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#ThematicMap">Thematic Map</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#CadastreMap">Cadastre Map</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#offshoreengineering">offshore engineering</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ThematicMap">Thematic Map</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#satellitesurvey">satellite survey</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NauticalChart">Nautical Chart</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#SpatialReferencing">Spatial Referencing</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#TopographicMap">Topographic Map</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#satellitenavigation">satellite navigation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#oilandgasexploration">oil and gas exploration</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#WeatherMap">Weather Map</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#engineeringsurvey">engineering survey</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#drilling">drilling</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#hydrography">hydrography</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="satellitenavigation">
+        <h3>
+          satellite navigation<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#satellitenavigation" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/application/SatelliteNavigation</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Satellite navigation is a system that uses satellites to provide autonomous geo-spatial positioning. It allows small electronic receivers to determine their location (longitude, latitude, and altitude) to high precision using time signals transmitted along a line of sight by radio from satellites.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#SRSApplication">SRS Application</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="satellitesurvey">
+        <h3>
+          satellite survey<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#satellitesurvey" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/application/SatelliteSurvey</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A remote sensing survey conducted from Earth-orbiting satellites, collecting imagery and other data without direct ground contact.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#SRSApplication">SRS Application</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="SpatialReferencing">
+        <h3>
+          Spatial Referencing<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#SpatialReferencing" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/application/SpatialReferencing</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Spatial referencing is the process of assigning real-world coordinates to data so that it can be located on the Earth’s surface and used in a geographic information system (GIS).</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#SRSApplication">SRS Application</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -353,7 +592,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>https://w3id.org/geosrs/application/TopographicMap</code></td>
+                <td><code>https://w3id.org/geosrs/application/TopographicMap</code></td></tr><tr><th>Example</th><td><a target="_blank" href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//datum/Geodetic_Datum_of_1965">[Link]</a></td>
             </tr>
             <tr>
                 <th>Description</th>

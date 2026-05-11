@@ -33,6 +33,8 @@
     "ArdenCloseProjection": "geosrs_projection:ArdenCloseProjection",
     "AreaOfUse": "geosrs:AreaOfUse",
     "ArmadilloProjection": "geosrs_projection:ArmadilloProjection",
+    "ArtificialSatellite": "geosrs_planet:ArtificialSatellite",
+    "Asteroid": "geosrs_planet:Asteroid",
     "AtlantisProjection": "geosrs_projection:AtlantisProjection",
     "AugustEpicycloidalProjection": "geosrs_projection:AugustEpicycloidalProjection",
     "AuthaGraphProjection": "geosrs_projection:AuthaGraphProjection",
@@ -80,9 +82,11 @@
     "ChamberlinTrimetricProjection": "geosrs_projection:ChamberlinTrimetricProjection",
     "CiricIProjection": "geosrs_projection:CiricIProjection",
     "Clarke": "geosrs_datum:Clarke1880ARC",
+    "CoastalHydrography": "geosrs_application:CoastalHydrography",
     "CollignonButterflyProjection": "geosrs_projection:CollignonButterflyProjection",
     "CollignonProjection": "geosrs_projection:CollignonProjection",
     "ColombiaUrbanProjection": "geosrs_projection:ColombiaUrbanProjection",
+    "Comet": "geosrs_planet:Comet",
     "CompactMillerProjection": "geosrs_projection:CompactMillerProjection",
     "Compound": "geosrs_srs:CompoundCRS",
     "CompoundCRS": "geosrs:CompoundCRS",
@@ -95,6 +99,7 @@
     "CoordinateOperation": "geosrs:CoordinateOperation",
     "CoordinateSystem": "geosrs:CoordinateSystem",
     "CoordinateSystemAxis": "geosrs:CoordinateSystemAxis",
+    "CoordinateTransformationOperation": "geosrs_co:CoordinateTransformationOperation",
     "CordiformProjection": "geosrs_projection:CordiformProjection",
     "CoxConformalProjection": "geosrs_projection:CoxConformalProjection",
     "CraigRetroazimuthalProjection": "geosrs_projection:CraigRetroazimuthalProjection",
@@ -115,6 +120,8 @@
     "DenoyerSemiEllipticalProjection": "geosrs_projection:DenoyerSemiEllipticalProjection",
     "DietrichKitadaProjection": "geosrs_projection:DietrichKitadaProjection",
     "DodecahedralProjection": "geosrs_projection:DodecahedralProjection",
+    "Drilling": "geosrs_application:Drilling",
+    "DwarfPlanet": "geosrs_planet:DwarfPlanet",
     "DymaxionProjection": "geosrs_projection:DymaxionProjection",
     "Dynamic": "geosrs_datum:DynamicVerticalDatum",
     "DynamicGeodeticReferenceFrame": "geosrs_datum:DynamicGeodeticReferenceFrame",
@@ -133,6 +140,7 @@
     "EngineeringCRS": "geosrs:EngineeringCRS",
     "EngineeringCoordinateSystem": "geosrs_cs:EngineeringCoordinateSystem",
     "EngineeringDatum": "geosrs_datum:EngineeringDatum",
+    "EngineeringSurvey": "geosrs_application:EngineeringSurvey",
     "EqualAreaProjection": "geosrs_projection:EqualAreaProjection",
     "EqualEarthProjection": "geosrs_projection:EqualEarthProjection",
     "EquallySpacedParallelsProjection": "geosrs_projection:EquallySpacedParallelsProjection",
@@ -224,12 +232,14 @@
     "HufnagelXIIProjection": "geosrs_projection:HufnagelXIIProjection",
     "HufnagelXIProjection": "geosrs_projection:HufnagelXIProjection",
     "HufnagelXProjection": "geosrs_projection:HufnagelXProjection",
+    "Hydrography": "geosrs_application:Hydrography",
     "IAG": "geosrs_datum:IAG1975",
     "IcosahedralProjection": "geosrs_projection:IcosahedralProjection",
     "IdentityOperation": "geosrs_co:IdentityOperation",
     "InterruptedGoodeHomolosineOceanicViewProjection": "geosrs_projection:InterruptedGoodeHomolosineOceanicViewProjection",
     "InterruptedGoodeHomolosineProjection": "geosrs_projection:InterruptedGoodeHomolosineProjection",
     "InterruptedQuarticAuthalicProjection": "geosrs_projection:InterruptedQuarticAuthalicProjection",
+    "InterstellarBody": "geosrs_planet:InterstellarBody",
     "JamesAzimuthalProjection": "geosrs_projection:JamesAzimuthalProjection",
     "KamenetskiyIProjection": "geosrs_projection:KamenetskiyIProjection",
     "KarchenkoShabanovaProjection": "geosrs_projection:KarchenkoShabanovaProjection",
@@ -269,12 +279,14 @@
     "Modified": "geosrs_datum:AiryModified1849",
     "MollweideProjection": "geosrs_projection:MollweideProjection",
     "MollweideWagnerProjection": "geosrs_projection:MollweideWagnerProjection",
+    "Moon": "geosrs_planet:Moon",
     "MurdochIIIProjection": "geosrs_projection:MurdochIIIProjection",
     "MurdochIIProjection": "geosrs_projection:MurdochIIProjection",
     "MurdochIProjection": "geosrs_projection:MurdochIProjection",
     "MyrahedalProjection": "geosrs_projection:MyrahedalProjection",
     "NaturalEarth2Projection": "geosrs_projection:NaturalEarth2Projection",
     "NaturalEarthProjection": "geosrs_projection:NaturalEarthProjection",
+    "NaturalSatellite": "geosrs_planet:NaturalSatellite",
     "NauticalChart": "geosrs_application:NauticalChart",
     "NellHammerProjection": "geosrs_projection:NellHammerProjection",
     "NellProjection": "geosrs_projection:NellProjection",
@@ -288,6 +300,8 @@
     "ObliqueProjection": "geosrs_projection:ObliqueProjection",
     "ObliqueStereographicProjection": "geosrs_projection:ObliqueStereographicProjection",
     "OctantProjection": "geosrs_projection:OctantProjection",
+    "OffshoreEngineering": "geosrs_application:OffshoreEngineering",
+    "OilAndGasExploration": "geosrs_application:OilAndGasExploration",
     "OperationMethod": "geosrs:OperationMethod",
     "OperationParameter": "geosrs:OperationParameter",
     "OperationParameterGroup": "geosrs_co:OperationParameterGroup",
@@ -311,15 +325,18 @@
     "PerspectiveProjection": "geosrs_projection:PerspectiveProjection",
     "PetermannStarProjection": "geosrs_projection:PetermannStarProjection",
     "PlanarCoordinateSystem": "geosrs_cs:PlanarCoordinateSystem",
+    "Planet": "geosrs_planet:Planet",
+    "PlanetStatus": "geosrs_planet:PlanetStatus",
     "PlateCarreeProjection": "geosrs_projection:PlateCarreeProjection",
     "Plessis": "geosrs_datum:Plessis1817",
+    "Plutoid": "geosrs_planet:Plutoid",
     "PointMotionOperation": "geosrs_co:PointMotionOperation",
     "PolarCoordinateSystem": "geosrs:PolarCoordinateSystem",
     "PoleLineProjection": "geosrs_projection:PoleLineProjection",
     "PolyconicProjection": "geosrs_projection:PolyconicProjection",
     "PolyhedralProjection": "geosrs_projection:PolyhedralProjection",
     "PrimeMeridian": "geosrs:PrimeMeridian",
-    "Projected": "geosrs:ProjectedCRS",
+    "Projected": "geosrs_srs:ProjectedCRS",
     "ProjectedCRS": "geosrs:ProjectedCRS",
     "Projection": "geosrs_projection:Projection",
     "PseudoAzimuthalProjection": "geosrs_projection:PseudoAzimuthalProjection",
@@ -348,6 +365,9 @@
     "RotationOperation": "geosrs_co:RotationOperation",
     "RoussilheProjection": "geosrs_projection:RoussilheProjection",
     "SRSApplication": "geosrs_application:SRSApplication",
+    "Satellite": "geosrs_planet:Satellite",
+    "SatelliteNavigation": "geosrs_application:SatelliteNavigation",
+    "SatelliteSurvey": "geosrs_application:SatelliteSurvey",
     "ScaleOperation": "geosrs_co:ScaleOperation",
     "SchjerningIProjection": "geosrs_projection:SchjerningIProjection",
     "SelenographicCRS": "geosrs:SelenographicCRS",
@@ -357,9 +377,13 @@
     "SingleOperation": "geosrs:SingleOperation",
     "SinusoidalProjection": "geosrs_projection:SinusoidalProjection",
     "SkewCoordinateSystem": "geosrs_cs:SkewCoordinateSystem",
+    "SliceAndDiceVertexGreatCircle": "geosrs_projection:SliceAndDiceVertexGreatCircle",
+    "SlideAndDiceParallelSmallCircle": "geosrs_projection:SlideAndDiceParallelSmallCircle",
     "SmythEqualSurfaceProjection": "geosrs_projection:SmythEqualSurfaceProjection",
+    "SnyderEqualArea": "geosrs_projection:SnyderEqualArea",
     "SpaceObliqueMercatorProjection": "geosrs_projection:SpaceObliqueMercatorProjection",
     "SpatialReferenceSystem": "geosrs:SpatialReferenceSystem",
+    "SpatialReferencing": "geosrs_application:SpatialReferencing",
     "SpatioParametricCompoundCRS": "geosrs:SpatioParametricCompoundCRS",
     "SpatioParametricTemporalCompoundCRS": "geosrs:SpatioParametricTemporalCompoundCRS",
     "SpatioTemporalCompoundCRS": "geosrs:SpatioTemporalCompoundCRS",
@@ -368,6 +392,7 @@
     "StabiusWernerIIIProjection": "geosrs_projection:StabiusWernerIIIProjection",
     "StabiusWernerIIProjection": "geosrs_projection:StabiusWernerIIProjection",
     "StabiusWernerIProjection": "geosrs_projection:StabiusWernerIProjection",
+    "Star": "geosrs_planet:Star",
     "StaticCRS": "geosrs:StaticCRS",
     "StereographicProjection": "geosrs_projection:StereographicProjection",
     "Strebe1995Projection": "geosrs_projection:Strebe1995Projection",
@@ -400,7 +425,7 @@
     "VanDerGrintenIIProjection": "geosrs_projection:VanDerGrintenIIProjection",
     "VanDerGrintenIProjection": "geosrs_projection:VanDerGrintenIProjection",
     "VanDerGrintenIVProjection": "geosrs_projection:VanDerGrintenIVProjection",
-    "Vertical": "geosrs_srs:VerticalCRS",
+    "Vertical": "geosrs_datum:DynamicVerticalDatum",
     "VerticalCRS": "geosrs:VerticalCRS",
     "VerticalCoordinateSystem": "geosrs:VerticalCoordinateSystem",
     "VerticalDatum": "geosrs:VerticalDatum",
@@ -433,6 +458,7 @@
     "aea": "geosrs_projection:AlbersEqualAreaProjection",
     "aitoff": "geosrs_projection:AitoffProjection",
     "alias": "skos:altLabel",
+    "and": "geosrs_application:OilAndGasExploration",
     "area_of_use": {
       "@context": {
         "@id": "domainOfValidity"
@@ -440,8 +466,17 @@
       "@id": "geosrs:domainOfValidity",
       "@type": "@vocab"
     },
+    "as_proj4": "geosrs:asProj4",
+    "as_proj_j_s_o_n": "geosrs:asProjJSON",
+    "as_w_k_t": "geosrs:asWKT",
     "aust_SA": "geosrs_datum:AustralianNationalSpheroid",
-    "axis": "geosrs:axis",
+    "axis": {
+      "@context": {
+        "@id": "axis"
+      },
+      "@id": "geosrs:axis",
+      "@type": "@vocab"
+    },
     "axisDirection": {
       "@context": {
         "@id": "axisDirection"
@@ -476,6 +511,7 @@
     "charting": "geosrs_application:NauticalChart",
     "clrk66": "geosrs_datum:Clarke1866",
     "clrk80ign": "geosrs_datum:Clarke1880IGN",
+    "coastal": "geosrs_application:CoastalHydrography",
     "col_urban": "geosrs_projection:ColombiaUrbanProjection",
     "collg": "geosrs_projection:CollignonProjection",
     "conversion": "geosrs:conversion",
@@ -495,13 +531,7 @@
       "@id": "geosrs:datumEnsemble",
       "@type": "@vocab"
     },
-    "datum_ensemble": {
-      "@context": {
-        "@id": "datumEnsemble"
-      },
-      "@id": "geosrs:datumEnsemble",
-      "@type": "@vocab"
-    },
+    "datum_ensemble": "geosrs:datumEnsemble",
     "dc": "http://purl.org/dc/elements/1.1/",
     "deg": "om:degree",
     "degree": "om:degree",
@@ -534,11 +564,20 @@
       "@type": "@vocab"
     },
     "domain_of_validity": "geosrs:domainOfValidity",
-    "down": "geosrs_cs:down",
+    "down": "geosrs_cs:Down",
+    "drilling": "geosrs_application:Drilling",
     "e_p_s_gcode": "geosrs:EPSGcode",
-    "east": "geosrs_cs:east",
-    "ellipsoid": "geosrs:ellipsoid",
+    "east": "geosrs_cs:East",
+    "eccentricity": "geosrs:eccentricity",
+    "ellipsoid": {
+      "@context": {
+        "@id": "ellipsoid"
+      },
+      "@id": "geosrs:ellipsoid",
+      "@type": "@vocab"
+    },
     "ellipsoidal": "geosrs:EllipsoidalCoordinateSystem",
+    "engineering": "geosrs_application:OffshoreEngineering",
     "entityType": {
       "@id": "rdf:type",
       "@type": "@vocab"
@@ -546,8 +585,9 @@
     "eqdc": "geosrs_projection:EquidistantConicProjection",
     "eqearth": "geosrs_projection:EqualEarthProjection",
     "evrst30": "geosrs_datum:Everest1930",
+    "exploration": "geosrs_application:OilAndGasExploration",
+    "gas": "geosrs_application:OilAndGasExploration",
     "geo": "http://www.opengis.net/ont/geosparql#",
-    "geocrs:CoordinateTransformationOperation": "geosrs_co:geocrs:CoordinateTransformationOperation",
     "geographicElement": "geo:hasBoundingBox",
     "geosrs": "https://w3id.org/geosrs/geosrs/",
     "geosrs_application": "https://w3id.org/geosrs/application/",
@@ -560,6 +600,7 @@
     "geosrs_projection": "https://w3id.org/geosrs/projection/",
     "geosrs_srs": "https://w3id.org/geosrs/srs/",
     "gnom": "geosrs_projection:GnomonicProjection",
+    "hydrography": "geosrs_application:Hydrography",
     "identifier": "dc:identifier",
     "intl": "geosrs_datum:International1924",
     "inverseFlattening": "geosrs:inverseFlattening",
@@ -576,13 +617,7 @@
     "m": "om:metre",
     "mapping": "geosrs_application:TopographicMap",
     "merc": "geosrs_projection:MercatorProjection",
-    "method": {
-      "@context": {
-        "@id": "method"
-      },
-      "@id": "geosrs:method",
-      "@type": "@vocab"
-    },
+    "method": "geosrs:method",
     "metre": "om:metre",
     "mill": "geosrs_projection:MillerProjection",
     "millimetre": "om:millimetre",
@@ -590,8 +625,11 @@
     "name": "rdfs:label",
     "natearth": "geosrs_projection:NaturalEarthProjection",
     "nautical": "geosrs_application:NauticalChart",
+    "navigation": "geosrs_application:SatelliteNavigation",
     "nicol": "geosrs_projection:NicolosiGlobularProjection",
-    "north": "geosrs_cs:north",
+    "north": "geosrs_cs:North",
+    "offshore": "geosrs_application:OffshoreEngineering",
+    "oil": "geosrs_application:OilAndGasExploration",
     "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
     "omerc": "geosrs_projection:ObliqueMercatorProjection",
     "ortho": "geosrs_projection:OrthographicProjection",
@@ -628,8 +666,10 @@
     "radian": "om:radian",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "referencing": "geosrs_application:SpatialReferencing",
     "robin": "geosrs_projection:RobinsonProjection",
     "rpoly": "geosrs_projection:RectangularPolyconicProjection",
+    "satellite": "geosrs_application:SatelliteNavigation",
     "scope": "skos:scopeNote",
     "secondDefiningParameter": "geosrs:operationParameter",
     "semiMajorAxis": "geosrs:semiMajorAxis",
@@ -646,7 +686,6 @@
       "@id": "geosrs:sourceCRS",
       "@type": "@vocab"
     },
-    "source_c_r_s": "geosrs:sourceCRS",
     "source_crs": {
       "@context": {
         "@id": "sourceCRS"
@@ -654,13 +693,15 @@
       "@id": "geosrs:sourceCRS",
       "@type": "@vocab"
     },
-    "south": "geosrs_cs:south",
+    "south": "geosrs_cs:South",
+    "spatial": "geosrs_application:SpatialReferencing",
     "stere": "geosrs_projection:StereographicProjection",
     "sterea": "geosrs_projection:ObliqueStereographicProjection",
     "subtype": {
       "@id": "rdf:type",
       "@type": "@vocab"
     },
+    "survey": "geosrs_application:SatelliteSurvey",
     "targetCRS": {
       "@context": {
         "@id": "targetCRS"
@@ -668,7 +709,6 @@
       "@id": "geosrs:targetCRS",
       "@type": "@vocab"
     },
-    "target_c_r_s": "geosrs:targetCRS",
     "target_crs": {
       "@context": {
         "@id": "targetCRS"
@@ -692,10 +732,10 @@
       "@id": "om:hasUnit",
       "@type": "@vocab"
     },
-    "up": "geosrs_cs:up",
+    "up": "geosrs_cs:Up",
     "utm": "geosrs_projection:UniversalTransverseMercatorProjection",
     "value": "rdf:value",
     "vertical": "geosrs:VerticalCoordinateSystem",
-    "west": "geosrs_cs:west"
+    "west": "geosrs_cs:West"
   }
 }

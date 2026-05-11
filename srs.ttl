@@ -8,6 +8,7 @@
 
 geosrs_srs:AreaOfUse a owl:Class ;
     rdfs:label "Area of use"@en ;
+    rdfs:subClassOf <geo:Feature> ;
     skos:definition "Area within which a coordinate operation may be used."@en .
 
 geosrs_srs:AxesList a owl:Class ;
@@ -16,7 +17,12 @@ geosrs_srs:AxesList a owl:Class ;
 
 geosrs_srs:BoundCRS a owl:Class ;
     rdfs:label "Bound Coordinate Reference System"@en ;
-    rdfs:subClassOf geosrs:CRS .
+    rdfs:subClassOf geosrs_srs:CRS .
+
+geosrs_srs:EngineeringCRS a owl:Class ;
+    rdfs:label "Engineering Coordinate Reference System"@en ;
+    rdfs:subClassOf geosrs_srs:CRS ;
+    skos:definition "A contextually local coordinate reference system which can be divided into two broad categories: - earth-fixed systems applied to engineering activities on or near the surface of the earth; - CRSs on moving platforms such as road vehicles, vessels, aircraft or spacecraft."@en .
 
 geosrs_srs:Extent a owl:Class ;
     rdfs:label "Extent"@en ;
@@ -24,22 +30,42 @@ geosrs_srs:Extent a owl:Class ;
 
 geosrs_srs:GeocentricCRS a owl:Class ;
     rdfs:label "Geocentric Coordinate Reference System"@en ;
-    rdfs:subClassOf geosrs:CRS ;
+    rdfs:subClassOf geosrs_srs:CRS ;
     skos:definition "A cartesian coordinate reference system that represents locations in the vicinity of the Earth (including its surface, interior, atmosphere, and surrounding outer space) as X, Y, and Z measurements from its center of mass. Commonly used to track the orbits of satellites. "@en .
+
+geosrs_srs:GeodeticCRS a owl:Class ;
+    rdfs:label "Geodetic Coordinate Reference System"@en ;
+    rdfs:subClassOf geosrs_srs:CRS ;
+    skos:definition "Coordinate Reference System associated with a geodetic datum. Cf. ISO 19111:2007:2007-07, part 8.2.2.a, table 10 and annex B.1.2.1.a."@en .
 
 geosrs_srs:GeographicBoundingBox a owl:Class ;
     rdfs:label "Geographic Bounding Box"@en ;
     skos:definition "Frame delimiting an area of interest. See ISO 19115-1:2014:2014-04, part 6.6.1 and table B.15.1 line 344."@en .
 
+geosrs_srs:GeographicCRS a owl:Class ;
+    rdfs:label "Geographic Coordinate Reference System"@en ;
+    rdfs:subClassOf geosrs_srs:CRS ;
+    skos:definition "Coordinate Reference System that has a geodetic reference frame and an ellipsoidal coordinate system"@en .
+
 geosrs_srs:ParametricCRS a owl:Class ;
     rdfs:label "Parametric Coordinate Reference System"@en ;
-    rdfs:subClassOf geosrs:CRS ;
+    rdfs:subClassOf geosrs_srs:CRS ;
     skos:definition "Coordinate Reference System based on a parametric datum"@en .
+
+geosrs_srs:ProjectedCRS a owl:Class ;
+    rdfs:label "Projected Coordinate Reference System"@en ;
+    rdfs:subClassOf geosrs_srs:CRS ;
+    skos:definition "Coordinate Reference System derived from a two-dimensional geodetic coordinate reference system by applying a map projection. Cf. ISO 19111:2007:2007-07, part 8.2.3.b, table 11 and annex B.1.2.3."@en .
 
 geosrs_srs:SelenographicCRS a owl:Class ;
     rdfs:label "Selenographic CRS"@en ;
-    rdfs:subClassOf geosrs:CRS ;
+    rdfs:subClassOf geosrs_srs:CRS ;
     skos:definition "Coordinate Reference System to refer locations on the surface of the Earth’s Moon."@en .
+
+geosrs_srs:SingleCRS a owl:Class ;
+    rdfs:label "Single Coordinate Reference System"@en ;
+    rdfs:subClassOf geosrs_srs:CRS ;
+    skos:definition "Coordinate reference system consisting of one coordinate system and one datum. Cf. ISO 19111:2007:2007-07, table 5."@en .
 
 geosrs_srs:SingleCRSList a owl:Class ;
     rdfs:label "Single CRS List"@en ;
@@ -57,23 +83,47 @@ geosrs_srs:SpatioTemporalCompoundCRS a owl:Class ;
 
 geosrs_srs:StaticCRS a owl:Class ;
     rdfs:label "Static CRS"@en ;
-    rdfs:subClassOf geosrs:CRS ;
+    rdfs:subClassOf geosrs_srs:CRS ;
     skos:definition "Coordinate Reference System that has a static reference frame"@en .
 
 geosrs_srs:TemporalCRS a owl:Class ;
     rdfs:label "Temporal CRS"@en ;
-    rdfs:subClassOf geosrs:CRS ;
+    rdfs:subClassOf geosrs_srs:CRS ;
     skos:definition "Coordinate Reference System based on a temporal datum"@en .
 
 geosrs_srs:VerticalCRS a owl:Class ;
     rdfs:label "Vertical CRS"@en ;
-    rdfs:subClassOf geosrs:CRS ;
+    rdfs:subClassOf geosrs_srs:CRS ;
     skos:definition "One-dimensional coordinate reference system associated with a vertical datum and used for recording heights or depths.Ellipsoidal heights are not captured in a vertical coordinate reference system but as part of a 3D coordinates tuple defined in a geodetic 3D coordinate reference system. Cf. ISO 19111:2007:2007-07, parts 8.2.2.b, table 14 and annex B.1.2.1.b."@en .
+
+geosrs_srs:proj4Literal a owl:NamedIndividual,
+        <rdf:Datatype> ;
+    rdfs:label "Proj4 Literal"@en ;
+    skos:definition "A literal which stores a proj4 String"@en .
+
+geosrs_srs:projJSONLiteral a owl:NamedIndividual,
+        <rdf:Dataype> ;
+    rdfs:label "ProJJSON Literal"@en ;
+    skos:definition "A literal which stores a projection JSON (ProjJSON) String"@en .
+
+geosrs_srs:wktLiteral a owl:NamedIndividual,
+        <rdf:Datatype> ;
+    rdfs:label "WKT Literal"@en ;
+    skos:definition "A literal which stores a WKT for CRS String"@en .
 
 geosrs:srssrs a owl:Ontology ;
     rdfs:label "SRS Ontology: Geosrs_srs"@en ;
     vann:preferredNamespacePrefix "geosrs_srs"^^xsd:string ;
     vann:preferredNamespaceUri "https://w3id.org/geosrs/srs/"^^xsd:anyURI .
+
+geosrs_srs:ReferenceSystem a owl:Class ;
+    rdfs:label "Reference System"@en ;
+    skos:definition "An abstract coordinate system, whose origin, orientation and scale are specified in physical space. It is based on a set of reference points, defined as geometric points whose position is identified physically and mathematically."@en .
+
+geosrs_srs:SpatialReferenceSystem a owl:Class ;
+    rdfs:label "Spatial Reference System"@en ;
+    rdfs:subClassOf geosrs_srs:ReferenceSystem ;
+    skos:definition "A spatial reference system (SRS) is a system for establishing spatial position. A spatial reference system can use geographic identifiers (place names, for example), coordinates (in which case it is a coordinate reference system), or identifiers with structured geometry (in which case it is a discrete global grid system)."@en .
 
 geosrs_srs:SpatioParametricCompoundCRS a owl:Class ;
     rdfs:label "Spatio Parametric Compound Coordinate Reference System"@en ;
@@ -82,6 +132,12 @@ geosrs_srs:SpatioParametricCompoundCRS a owl:Class ;
 
 geosrs_srs:CompoundCRS a owl:Class ;
     rdfs:label "Compound Coordinate Reference System"@en ;
-    rdfs:subClassOf geosrs:CRS ;
+    rdfs:subClassOf geosrs_srs:CRS ;
     skos:definition "Coordinate reference system using at least two independent single coordinate reference systems. Cf. ISO 19111:2007:2007-07, parts 8.2.3.c, 8.2.4, table 6 and annex B.1.2.4."@en .
+
+geosrs_srs:CRS a owl:Class ;
+    rdfs:label "Coordinate Reference System"@en ;
+    rdfs:subClassOf geosrs_srs:SpatialReferenceSystem ;
+    owl:disjointWith geosrs:Datum ;
+    skos:definition "Depending on the spatial dimension of coordinates (1D, 2D, 3D), this piece of metadata is used for specifying the elements of definition associated to a given set of coordinates: its datum, its ellipsoid, its prime meridian, the type of coordinates (geocentric, geographic, projected,...), the coordinates units of measure, when appropriate the cartographic projection used, the vertical coordinate reference system."@en .
 
