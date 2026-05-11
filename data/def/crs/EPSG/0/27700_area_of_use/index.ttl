@@ -1,0 +1,11 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/27700_area_of_use> a <http://www.w3.org/ns/ldp#Resource>,
+        <https://w3id.org/geosrs/AreaOfUse>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "United Kingdom (UK) - offshore to boundary of UKCS within 49°45'N to 61°N and 9°W to 2°E; onshore Great Britain (England, Wales and Scotland). Isle of Man onshore."@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    geo:hasBoundingBox <http://www.opengis.net/def/crs/EPSG/0/27700_area_of_use_bbox> .
+
